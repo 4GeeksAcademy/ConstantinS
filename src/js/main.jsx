@@ -10,9 +10,17 @@ import '../styles/index.css'
 
 // components
 import Home from './components/Home';
+const reactRender = ReactDOM.createRoot(document.getElementById('root'))
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+setInterval (() => {
+
+reactRender.render(
   <React.StrictMode>
-    <Home/>
+    <Home counter ={coumnter}/>
   </React.StrictMode>,
 )
+counter++
+
+}, 1000)
+
+
