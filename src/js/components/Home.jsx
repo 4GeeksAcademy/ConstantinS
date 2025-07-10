@@ -2,15 +2,17 @@ import React from "react";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
+import TimeCounter from "./secondaryComponents/SecondsCounter";
+
 
 //create your first component
+
+
 const Home = ({ counter }) => {
   return (
-    <div className="text-center">
-      <h1 className="text-center mt-5">Hello Rigo!</h1>
-      <p>{counter}</p>
+    <div className="text-center" style={{ color: "red" }}>
+      <TimeCounter totalSeconds={counter} />
     </div>
   );
 };
-
 export default Home;
