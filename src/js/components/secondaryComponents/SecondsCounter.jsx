@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faClock } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // <--- ESTA LÍNEA FALTABA
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Cajita from "./Cajita";
 
 library.add(faClock);
